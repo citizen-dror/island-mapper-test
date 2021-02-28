@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A JavaScript project</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>Map Islands project</h1>
+  <div id="app">
+    <div id="controlsDiv">
+      <div class="controlsRows">
+        <b>Width:</b> <input id="inputWidth" type="number" min="1" max="1000" value="200">
+        <b>Hight:</b> <input id="inputHight" type="number" min="1" max="1000" value="200">
+        <button id="btnRandomize">RANDOMIZE</button> 
+        <button id="btnSolve" style='visibility: hidden;' >SOLVE</button>
+      </div>
+      <div class="controlsRows">
+        <b>Canvas Size:</b> <input id="inputCanvasSize" type="number" min="100" max="1000" value="500">
+      </div>
+      <div id="noticeDiv" class="controlsRows">
+        <span id="spanIslandCount" class="infoSpan"></span>
+        <span id="spanTime" class="infoSpan"></span>
+      </div>
+    </div>
+    <div id="cnavasDiv">
+      <canvas id="islandsCanavas" width="500" height="500"></canvas>
+    </div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
